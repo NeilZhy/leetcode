@@ -15,8 +15,9 @@ public:
         for (int i = 0; i < s.size(); i++) {
             if ('?' == s[i]) {
                 s[i] = 'a';
-                while (((i - 1 >= 0) && (s[i-1] == s[i])) || ((i + 1 < s.size()) && (s[i+1] == s[i]))) {
-                    s[i]++;
+                while (((i - 1 >= 0) && (s[i - 1] == s[i])) ||
+                       ((i + 1 < s.size()) && (s[i + 1] == s[i]))) {
+                  s[i]++;
                 }
             }
         }
